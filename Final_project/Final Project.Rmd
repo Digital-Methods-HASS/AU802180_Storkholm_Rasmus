@@ -1,0 +1,367 @@
+---
+title: "Final Project"
+author: "Storkholm, Rasmus"
+date: "2026-05-05"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# ============================================================
+# Loading in the data and making columns in the files
+# ============================================================
+#Loading in the libraries
+library(tidyverse)
+library(readr)
+library(dplyr)
+library(scales)
+library(patchwork)
+library(ggplot2)
+
+# Reading the data
+read.csv("data/Steri_fil.csv")
+
+# saving the data, and viewing it
+steri <- read_csv2("Data/Steri_fil.csv")
+view(steri)
+
+
+# Giving the columns names
+colnames(steri) <- c("Sagsnr", "Sagsnr_litra", "Køn", "Fødselsår",
+                  "Geo_1911", "Ægte", "Faders_erhverv",
+                  "Hovedgrp", "SterÅr", "Lov", "Par")
+
+# Cleaning the data
+steri <- steri %>%
+  filter(Køn %in% c("Kvinde", "Mand")) %>%
+  mutate(SterÅr = as.numeric(SterÅr),
+         Lov    = as.numeric(Lov)) %>%
+  filter(!is.na(SterÅr))
+```
+
+```{r}
+# ============================================================
+# GRAPH 1: Total timeline (linegraph)
+# ============================================================
+# Counting number per year
+per_år <- steri %>%
+  count(SterÅr, name = "Antal")
+
+ggplot(per_år, aes(x = SterÅr, y = Antal)) +
+  geom_line(color = "#2c3e6b", linewidth = 1.2) +
+  geom_point(aes(color = SterÅr == 1934), size = 3) +
+  scale_color_manual(values = c("FALSE" = "#2c3e6b", "TRUE" = "#c0392b"), guide = "none") +
+  
+  
+  # Mark law change in 1934
+  geom_vline(xintercept = 1934, linetype = "dashed",
+             color = "#c0392b", linewidth = 0.9) +
+  annotate("text", x = 1934.2, y = 30,
+           label = "1934-law\n(compulsory sterilization)",
+           hjust = 0, vjust = -0.7,
+           color = "#c0392b", size = 3.5) +
+  
+  scale_x_continuous(breaks = 1930:1943) +
+  labs(
+    title    = "Sterilizations at the Keller institutions 1930–1943",
+    subtitle = "Annual total of procedures",
+    x        = "Year",
+    y        = "Total procedures",
+    caption  = "Source: Rigsarkivet.dk"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    plot.title    = element_text(face = "bold"),
+    axis.text.x   = element_text(angle = 45, hjust = 1),
+    panel.grid.minor = element_blank()
+  )
+
+ggsave("tidsserie_samlet.png", width = 10, height = 6, dpi = 300)
+```
+
+```{r , echo=FALSE}
+# ============================================================
+# GRAPH 2: Gender share per legal basis 
+# ============================================================
+
+køn_lov <- steri %>%
+  filter(!is.na(Lov), !is.na(Par)) %>%
+  mutate(
+    Lov_label = case_when(
+      Lov == 1929 ~ "Act 1929\n(voluntary, par. 2)",
+      Lov == 1934 ~ "Act 1934\n(compulsory, par. 5)",
+      Lov == 1935 ~ "Act 1935\n(extended, par. 1 & 2)",
+      TRUE ~ paste0("Act ", Lov)
+    ),
+    Kategori = case_when(
+      Lov == 1935 & Par == 2 & Køn == "Mand"   ~ "Male – castration (par. 2)",
+      Lov == 1935 & Par == 2 & Køn == "Kvinde" ~ "Female – castration (par. 2)",
+      Køn == "Mand"                              ~ "Male – sterilization",
+      Køn == "Kvinde"                            ~ "Female – sterilization"
+    )
+  ) %>%
+  count(Lov_label, Kategori, name = "Antal") %>%
+  group_by(Lov_label) %>%
+  mutate(Andel = Antal / sum(Antal) * 100) %>%
+  ungroup() %>%
+  mutate(
+    Lov_label = factor(Lov_label, levels = c(
+      "Act 1929\n(voluntary, par. 2)",
+      "Act 1934\n(compulsory, par. 5)",
+      "Act 1935\n(extended, par. 1 & 2)"
+    )),
+    Kategori = factor(Kategori, levels = c(
+      "Female – castration (par. 2)",
+      "Female – sterilization",
+      "Male – castration (par. 2)",
+      "Male – sterilization"
+    ))
+  )
+
+ggplot(køn_lov, aes(x = Lov_label, y = Andel, fill = Kategori)) +
+  geom_col(position = "stack", width = 0.5) +
+  geom_text(aes(label = paste0(round(Andel), "%")),
+            position = position_stack(vjust = 0.5),
+            color = "white", fontface = "bold", size = 4) +
+scale_fill_manual(
+    values = c(
+      "Female – sterilization"       = "#c0392b",
+      "Male – sterilization"         = "#2c5fa8",
+      "Female – castration (par. 2)" = "#e8a0a0",
+      "Male – castration (par. 2)"   = "#7fa8d4"
+    ),
+    breaks = c(
+      "Female – sterilization",
+      "Male – sterilization",
+      "Female – castration (par. 2)",
+      "Male – castration (par. 2)"
+    )
+  ) +
+  scale_y_continuous(labels = percent_format(scale = 1),
+                     breaks = seq(0, 100, 25)) +
+  labs(
+    title    = "Gender share within each legal basis",
+    subtitle = "Sterilizations and castrations – gender vs. act",
+    x        = NULL,
+    y        = "Share (%)",
+    fill     = NULL,
+    caption  = "Source: Rigsarkivet.dk"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    plot.title         = element_text(face = "bold"),
+    legend.position    = "top",
+    legend.text        = element_text(size = 9),
+    panel.grid.minor   = element_blank(),
+    panel.grid.major.x = element_blank()
+  )
+
+ggsave("gender_by_act.png", width = 9, height = 6, dpi = 300)
+```
+
+```{r}
+# ============================================================
+# GRAPH 3: Waffle chart – Social class distribution among sterilized individuals 1930–1943
+# ============================================================
+
+# Tjek værdier i Hovedgrp
+unique(steri$Hovedgrp)
+
+# Tæl antal per hovedgruppe
+hovedgrp_count <- steri %>%
+  filter(!is.na(Hovedgrp), Hovedgrp != "") %>%
+  count(Hovedgrp, name = "Antal") %>%
+  arrange(Hovedgrp)
+
+# Byg waffle-grid manuelt
+n_cols <- 10
+waffle_df <- hovedgrp_count %>%
+  uncount(Antal) %>%
+  mutate(
+    id = row_number(),
+    x  = (id - 1) %/% n_cols, 
+    y  = (id - 1) %% n_cols     
+  )
+
+ggplot(waffle_df, aes(x = x, y = y, fill = Hovedgrp)) +
+  geom_tile(color = "white", linewidth = 0.5) +
+  scale_fill_manual(
+    values = c(
+      "A" = "#1a3a6b",
+      "B" = "#4F7942",
+      "C" = "#FFC000",
+      "D" = "#8b0000"
+    ),
+    labels = c(
+      "A" = "A – highest social class",
+      "B" = "B – working class",
+      "C" = "C – Benefit recipients",
+      "D" = "D – Unspecified/
+      living on private means"
+    )
+  ) +
+  coord_equal() +
+  labs(
+    title    = "Social class distribution among sterilized individuals 1930–1943",
+    subtitle = "Each square represents one individual",
+    fill     = "Social class",
+    caption  = "Source: Rigsarkivet.dk"
+  ) +
+  theme_void(base_size = 13) +
+  theme(
+    plot.title      = element_text(face = "bold", margin = margin(b = 5)),
+    plot.subtitle   = element_text(margin = margin(b = 10)),
+    legend.position = "bottom"
+  )
+
+ggsave("waffle_socialklasse.png", width = 10, height = 6, dpi = 300)
+
+```
+
+```{r}
+# ============================================================
+# GRAPH 4: Age at sterilization × law × gender (boxplot)
+# ============================================================
+
+steri_alder <- steri %>%
+  mutate(
+    SterÅr    = as.numeric(SterÅr),
+    Fødselsår = as.numeric(Fødselsår),
+    Alder = SterÅr - Fødselsår,
+    Lov_label = case_when(
+      Lov == 1929 ~ "Act 1929\n(voluntary)",
+      Lov == 1934 ~ "Act 1934\n(compulsory)",
+      Lov == 1935 ~ "Act 1935\n(extended)"
+    ),
+    Lov_label = factor(Lov_label, levels = c(
+      "Act 1929\n(voluntary)",
+      "Act 1934\n(compulsory)",
+      "Act 1935\n(extended)"
+    ))
+  ) %>%
+  filter(!is.na(Alder), !is.na(Lov_label))
+
+ggplot(steri_alder, aes(x = Lov_label, y = Alder, fill = Køn, color = Køn)) +
+  geom_boxplot(
+    alpha = 0.2,
+    width = 0.5,
+    outlier.shape = 1,
+    outlier.size  = 2,
+    position = position_dodge(width = 0.6)
+  ) +
+  scale_fill_manual(values  = c("Kvinde" = "#c0392b", "Mand" = "#2c5fa8")) +
+  scale_color_manual(values = c("Kvinde" = "#c0392b", "Mand" = "#2c5fa8")) +
+  scale_y_continuous(breaks = seq(15, 65, by = 5)) +
+  labs(
+    title    = "Age at sterilization by legal basis 1930–1943",
+    subtitle = "Age = Sterilization year − birthday, split by gender (Kvinde=Woman) (Mand=Man)",
+    x        = NULL,
+    y        = "Age at sterilization",
+    fill     = NULL,
+    color    = NULL,
+    caption  = "Source: Rigsarkivet.dk"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    plot.title         = element_text(face = "bold"),
+    legend.position    = "top",
+    panel.grid.minor   = element_blank(),
+    panel.grid.major.x = element_blank()
+  )
+
+ggsave("age_by_law_gender.png", width = 9, height = 6, dpi = 300)
+```
+```{r}
+# ============================================================
+# GRAPH 5: Geographical origin × gender
+# ============================================================
+
+geo_køn <- steri %>%
+  filter(!is.na(Geo_1911), !is.na(Køn)) %>%
+  count(Geo_1911, Køn, name = "Antal") %>%
+  mutate(Geo_1911 = factor(Geo_1911, levels = c("Land", "By", "Hovedstaden")))
+
+ggplot(geo_køn, aes(x = Geo_1911, y = Antal, fill = Køn)) +
+  geom_col(position = "dodge", width = 0.6) +
+  geom_text(aes(label = Antal),
+            position = position_dodge(width = 0.6),
+            vjust = -0.5, size = 3.5, fontface = "bold") +
+  scale_fill_manual(values = c("Kvinde" = "#c0392b", "Mand" = "#2c5fa8")) +
+  scale_y_continuous(expand = expansion(mult = c(0, 0.1))) +
+  labs(
+    title    = "Geographical origin of sterilized individuals 1930–1943",
+    subtitle = "By place of residence recorded in the 1911 census",
+    x        = NULL,
+    y        = "Number of procedures",
+    fill     = NULL,
+    caption  = "Source: Rigsarkivet.dk"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    plot.title         = element_text(face = "bold"),
+    legend.position    = "top",
+    panel.grid.minor   = element_blank(),
+    panel.grid.major.x = element_blank()
+  )
+
+ggsave("geo_origin_by_gender.png", width = 8, height = 6, dpi = 300)
+```
+```{r}
+# ============================================================
+# GRAPH 6: Illegitimacy
+# ============================================================
+
+# Plot A: % uægtefødte pr. køn og lov
+p_lov <- steri %>%
+  filter(!is.na(Ægte), !is.na(Lov), !is.na(Køn)) %>%
+  group_by(Lov, Køn) %>%
+  summarise(
+    pct_uægte = mean(Ægte == "Nej") * 100,
+    n = n(), .groups = "drop"
+  ) %>%
+  mutate(Lov_label = factor(paste0("Act ", Lov),
+    levels = c("Act 1929", "Act 1934", "Act 1935"))) %>%
+  ggplot(aes(x = Lov_label, y = pct_uægte, fill = Køn)) +
+  geom_col(position = "dodge", width = 0.6) +
+  scale_fill_manual(values = c("Kvinde" = "#c0392b", "Mand" = "#2c5fa8")) +
+  scale_y_continuous(labels = function(x) paste0(x, "%"), limits = c(0, 45)) +
+  labs(title = "% illegitimate births by gender and law",
+       x = NULL, y = NULL, fill = NULL) +
+  theme_minimal(base_size = 12) +
+  theme(plot.title = element_text(face = "bold", size = 11),
+        legend.position = "top",
+        panel.grid.major.x = element_blank(),
+        panel.grid.minor = element_blank())
+
+# Plot B: % uægtefødte pr. social klasse
+p_klasse <- steri %>%
+  filter(!is.na(Ægte), !is.na(Hovedgrp)) %>%
+  group_by(Hovedgrp) %>%
+  summarise(
+    pct_uægte = mean(Ægte == "Nej") * 100,
+    n = n(), .groups = "drop"
+  ) %>%
+  mutate(highlight = Hovedgrp == "D") %>%
+  ggplot(aes(x = Hovedgrp, y = pct_uægte, fill = highlight)) +
+  geom_col(width = 0.6) +
+  scale_fill_manual(values = c("FALSE" = "#73726c", "TRUE" = "#c0392b"), guide = "none") +
+  scale_y_continuous(labels = function(x) paste0(x, "%"), limits = c(0, 105)) +
+  scale_x_discrete(labels = c("A\n(highest)", "B\n(working)", "C\n(benefits)", "D\n(unspecified)")) +
+  labs(title = "% illegitimate births by social class",
+       x = NULL, y = NULL) +
+  theme_minimal(base_size = 12) +
+  theme(plot.title = element_text(face = "bold", size = 11),
+        panel.grid.major.x = element_blank(),
+        panel.grid.minor = element_blank())
+
+p_lov + p_klasse +
+  plot_annotation(
+    title   = "Illegitimate birth and sterilization 1930–1943",
+    caption = "Source: Rigsarkivet.dk"
+  ) &
+  theme(plot.title = element_text(face = "bold"))
+
+ggsave("aegtefodt_analyse.png", width = 11, height = 6, dpi = 300)
+```
+
