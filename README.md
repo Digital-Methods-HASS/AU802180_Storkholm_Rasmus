@@ -18,6 +18,7 @@ This repository contains weekly assignments and the final project for the course
 | `week11-kings` | Tidyverse: wrangling and plotting the Danish monarchs dataset |
 | `Week 12` | Plotting in R: Danish monarchs, Nordic homicides, and Gapminder |
 | `Week 13` | Sentiment analysis and interactive maps with Leaflet in R |
+| `Week 17` | Digital archives reflection assignment: analysis of digital archival literacy, metadata, and multimodal testimony using the David Boder wire recordings and the *Voyages* database |
 | `Final_project` | Final digital project – R script, data, and written report |
 
 ---
