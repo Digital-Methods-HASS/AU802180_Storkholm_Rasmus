@@ -1,0 +1,506 @@
+﻿;;;;;;;;;;
+;;;;;;;;;;
+Data om 500 steriliserede/kastrerede fra Den Kellerske Åndssvageanstalt 1930-1943;;;;;;;;;;
+"Kildehenvisning og forklaring til de enkelte kolonner: se arket ""Kolonner og kilde""";;;;;;;;;;
+;;;;;;;;;;
+Sagsnr;Sagsnr litra;Køn;Fødselsår;Geo_1911;Ægte?;Faders erhverv;Hovedgrp;SterÅr;Lov;§
+1;;Mand;1897;By;Ja;Arbejdsmand;B;1930;1929;2
+2;;Mand;1895;Land;Ja;Husmand;A;1930;1929;2
+3;;Kvinde;1898;Land;Nej;Røgter;B;1930;1929;2
+4;;Kvinde;1892;By;Ja;Arbejdsmand;B;1930;1929;2
+5;;Kvinde;1902;Land;Nej;Barber;B;1932;1929;2
+6;;Mand;1891;Land;Nej;Far ikke angivet;D;1930;1929;2
+7;;Mand;1899;Land;Ja;Husmand;A;1930;1929;2
+8;;Kvinde;1903;Land;Ja;Indsidder;B;1930;1929;2
+9;;Kvinde;1894;By;Ja;Arbejdsmand;B;1930;1929;2
+10;;Kvinde;1892;Land;Ja;Arbejdsmand;B;1931;1929;2
+11;;Kvinde;1891;Land;Ja;Almisselem;C;1931;1929;2
+12;;Kvinde;1903;Land;Ja;Indsidder;B;1931;1929;2
+13;;Kvinde;1901;Land;Nej;Far ikke angivet;D;1930;1929;2
+14;;Kvinde;1894;Land;Ja;Indsidder;B;1931;1929;2
+15;;Kvinde;1897;Land;Ja;Husmand;A;1931;1929;
+16;;Kvinde;1901;Land;Ja;Arbejdsmand;B;1932;1929;2
+17;;Mand;1897;Land;Ja;Parcellist;A;1931;1929;2
+18;;Mand;1893;Land;Ja;Fattiglem;C;1931;1929;2
+19;;Mand;1906;Land;Ja;Husmand;A;1932;1929;2
+20;;Mand;1901;By;Ja;Smedesvend;B;1932;1929;2
+21;;Mand;1905;Land;Ja;Indsidder;B;1932;1929;
+22;;Kvinde;1904;Land;Ja;Indsidder og arbejdsmand;B;1934;1929;2
+23;;Mand;1910;By;Ja;Arbejdsmand;B;1932;1929;2
+24;;Mand;1897;Land;Ja;Husmand;A;1933;1929;2
+25;;Mand;1911;Land;Ja;Husmand;A;1933;1929;2
+26;;Mand;1881;Land;Ja;Almisselem;C;1930;1929;2
+27;;Mand;1881;Land;Ja;Skomager;B;1930;1929;2
+28;;Mand;1893;Hovedstaden;Ja;Arbejdsmand;B;1932;1929;2
+29;;Kvinde;1906;Land;Nej;Tjenestekarl;B;1932;1929;2
+30;;Kvinde;1909;Land;Ja;Fodermester;B;1932;1929;2
+31;;Mand;1906;Land;Nej;Erhverv ikke angivet;D;1932;1929;2
+32;;Mand;1909;Land;Ja;Banearbejder ;B;1932;1929;2
+33;;Mand;1909;Land;Nej;Erhverv ikke angivet;D;1932;1929;2
+34;;Mand;1894;By;Ja;Slagter;B;1932;1929;2
+35;;Kvinde;1907;Land;Ja;Fodermester;B;1932;1929;2
+36;;Kvinde;1907;Land;Ja;Røgter;B;1932;1929;2
+37;;Kvinde;1910;Land;Ja;Arbejdsmand;B;1932;1929;2
+38;;Kvinde;1900;Land;Nej;Erhverv ikke angivet;D;1932;1929;2
+39;;Kvinde;1903;Land;Ja;Murer;B;1932;1929;2
+40;;Kvinde;1904;Land;Ja;Parcellist;A;1934;1929;2
+41;;Kvinde;1905;Land;Nej;Tjenestekarl;B;1932;1929;2
+42;;Kvinde;1899;Land;Nej;Sømand;B;1932;1929;2
+43;;Kvinde;1899;By;Ja;Fyrbøder;B;1932;1929;2
+44;;Kvinde;1906;By;Nej;Erhverv ikke angivet;D;1932;1929;2
+45;;Kvinde;1905;Land;Ja;Arbejdsmand;B;1933;1929;2
+46;;Kvinde;1902;Land;Nej;Tjenestekarl;B;1933;1929;2
+47;;Kvinde;1896;Land;Ja;Gårdbestyrer;A;1933;1929;2
+48;;Kvinde;1908;Land;Ja;Sadelmager;B;1933;1929;2
+49;;Kvinde;1910;Land;Ja;Arbejdsmand;B;1933;1929;2
+50;;Mand;1902;By;Ja;Arbejdsmand;B;1933;1929;2
+51;;Kvinde;1909;Land;Ja;Fisker;B;1933;1929;2
+52;;Kvinde;1907;By;Nej;Far ikke angivet;D;1933;1929;2
+53;;Kvinde;1911;Land;Ja;Fodermester;B;1933;1929;2
+54;;Mand;1905;By;Ja;Slagtersvend;B;1933;1929;2
+55;;Kvinde;1897;Land;Ja;Husmand;A;1933;1929;2
+56;;Mand;1905;Land;Ja;Gårdmand;A;1933;1929;2
+57;;Kvinde;1908;Land;Ja;Husmand;A;1933;1929;2
+58;;Kvinde;1910;Land;Ja;Husmand;A;1933;1929;2
+59;;Kvinde;1902;Land;Nej;Erhverv ikke angivet;D;1933;1929;2
+60;;Kvinde;1899;Hovedstaden;Ja;Kusk;B;1934;1929;2
+61;;Kvinde;1907;Land;Ja;Arbejdsmand;B;1933;1929;2
+62;;Kvinde;1903;Land;Nej;Far ikke angivet;D;1933;1929;
+63;;Kvinde;1912;Land;Ja;Gasværksarbejder;B;1933;1929;2
+64;;Kvinde;1905;Land;Ja;Husmand;A;1934;1929;2
+65;;Kvinde;1906;Land;Nej;Sømand;B;1933;1929;2
+66;;Mand;1896;Land;Ja;Gårdejer;A;1933;1929;2
+67;;Mand;1912;By;Ja;Cementstøber;B;1933;1929;2
+68;;Kvinde;1910;Land;Ja;Arbejdsmand;B;1933;1929;2
+69;;Kvinde;1906;Land;Ja;Indsidder;B;1933;1929;2
+70;;Kvinde;1912;By;Nej;Arbejdsmand;B;1934;1929;2
+71;;Kvinde;1909;Land;Ja;Teglværksarbejder;B;1934;1929;2
+72;;Kvinde;1911;Land;Ja;Arbejdsmand;B;1934;1929;2
+73;;Kvinde;1903;Land;Ja;Arbejder;B;1934;1929;2
+74;;Kvinde;1912;Land;Ja;Fisker;B;1934;1929;2
+75;;Kvinde;1911;Land;Ja;Arbejdsmand;B;1934;1929;2
+76;;Kvinde;1909;Land;Ja;Fodermester;B;1934;1929;2
+77;;Kvinde;1897;Land;Nej;Arbejdsmand;B;1934;1929;2
+78;;Kvinde;1909;By;Ja;Arbejdsmand;B;1934;1929;2
+79;;Mand;1907;By;Ja;Arbejdsmand;B;1934;1929;2
+80;;Kvinde;1906;By;Ja;Heizer (fyrbøder);B;1934;1934;5
+81;;Kvinde;1901;Land;Ja;Blikkenslager;B;1934;1934;5
+82;;Kvinde;1913;By;Ja;Arbejdsmand;B;1934;1934;5
+83;;Kvinde;1898;By;Ja;Murer;B;1934;1934;5
+84;;Kvinde;1911;By;Nej;Arbejdsmand;B;1934;1934;5
+85;;Kvinde;1912;Land;Nej;Arbejdsmand;B;1934;1934;5
+87;;Mand;1907;Land;Ja;Husejer og pumpemager;B;1934;1929;1
+88;;Kvinde;1914;Land;Ja;Gårdmand;A;1934;1934;5
+89;;Kvinde;1914;Land;Ja;Depotarbejder;B;1934;1934;5
+90;;Kvinde;1912;By;Nej;Far ikke angivet;D;1934;1934;5
+91;;Mand;1899;Land;Ja;Husmand;A;1934;1929;1
+94;;Kvinde;1913;By;Nej;Slagter;B;1934;1934;5
+95;;Kvinde;1919;Land;Ja;Arbejdsmand;B;1935;1934;5
+96;;Kvinde;1904;Land;Ja;Indsidder;B;1934;1934;5
+97;;Mand;1912;By;Ja;Arbejdsmand;B;1934;1934;5
+98;;Mand;1891;Land;Nej;Forkarl;B;1934;1934;5
+99;;Kvinde;1915;Land;Ja;Smed;B;1934;1934;5
+100;;Mand;1913;Land;Nej;Far ikke angivet;D;1935;1934;5
+101;;Kvinde;1912;By;Ja;Arbejdsmand;B;1935;1934;5
+102;;Kvinde;1912;By;Nej;Smed;B;1935;1934;5
+103;;Kvinde;1914;Land;Nej;Far ikke angivet;D;1935;1934;5
+104;;Kvinde;1912;Land;Ja;Skibsfører;B;1935;1934;5
+105;;Kvinde;1898;Land;Ja;Arbejdsmand;B;1935;1934;5
+107;;Mand;1905;Land;Ja;Arbejdsmand;B;1935;1929;2
+108;;Mand;1913;Land;Ja;Arbejdsmand;B;1935;1934;5
+109;;Mand;1907;Land;Ja;Murer;B;1935;1934;5
+111;;Kvinde;1914;Land;Ja;Indsidder;B;1935;1934;5
+112;;Mand;1911;By;Ja;Arbejdsmand;B;1935;1934;5
+112;a;Kvinde;1914;Land;Ja;Skomager;B;1935;;
+113;;Kvinde;1909;Land;Ja;Smed;B;1935;1934;5
+114;;Kvinde;1912;By;Ja;Arbejdsmand;B;1935;1934;5
+115;;Kvinde;1915;Land;Ja;Arbejdsmand;B;1935;1934;5
+116;;Kvinde;1907;Land;Ja;Husmand;A;1935;1934;5
+117;;Kvinde;1915;Land;Ja;Statshusmand;A;1935;1934;5
+118;;Kvinde;1907;Land;Ja;Husmand;A;1935;1934;5
+119;;Kvinde;1905;Land;Ja;Husejer;A;1935;1934;5
+120;;Kvinde;1898;By;Ja;Arbejder;B;1935;1934;5
+121;;Kvinde;1907;Land;Ja;Arbejder;B;1935;1934;5
+122;;Kvinde;1912;By;Ja;Maskinarbejder ;B;1935;1934;5
+123;;Kvinde;1914;Land;Ja;Banearbejder ;B;1935;1934;5
+124;;Mand;1905;Land;Ja;Indsidder;B;1936;1934;5
+125;;Kvinde;1916;Land;Ja;Arbejdsmand;B;1935;1934;5
+126;;Mand;1914;By;Ja;Arbejdsmand;B;1935;1934;5
+127;;Mand;1894;Hovedstaden;Ja;Brødhandler;A;1935;1934;5
+128;;Kvinde;1910;Land;Ja;Sømand;B;1935;1934;5
+129;;Mand;1908;By;Nej;Erhverv ikke angivet;D;1935;1934;5
+130;;Mand;1913;By;Ja;Arbejdsmand;B;1935;1934;5
+131;;Mand;1914;Land;Ja;Fiskehandler;A;1935;1934;5
+132;;Mand;1907;Land;Ja;Arbejdsmand;B;1935;1934;5
+133;;Mand;1910;Land;Nej;Tjenestekarl;B;1935;1934;5
+134;;Mand;1905;Land;Ja;Skrædder og Cyklehandler;A;1935;1934;5
+135;;Mand;1911;Land;Ja;Arbejdsmand;B;1937;1934;5
+136;;Mand;1916;By;Ja;Savskærer;B;1935;1934;5
+137;;Mand;1908;By;Nej;Erhverv ikke angivet;D;1935;1934;5
+138;;Kvinde;1905;Land;Ja;Arbejdsmand;B;1935;1934;5
+139;;Kvinde;1908;Land;Nej;Fodermester;B;1935;1934;5
+140;;Kvinde;1916;Land;Ja;Skomager;B;1935;1934;5
+141;;Mand;1902;By;Ja;Snedker;B;1935;1935;2
+142;;Kvinde;1910;By;Ja;Kusk;B;1935;1934;5
+143;;Kvinde;1916;Hovedstaden;Nej;Far ikke angivet;D;1935;1934;5
+144;;Kvinde;1910;Land;Ja;Arbejdsmand;B;1935;1934;5
+145;;Kvinde;1908;Land;Ja;Husfolk;A;1935;1934;5
+146;;Kvinde;1900;Land;Ja;Arbejdsmand;B;1935;1934;5
+147;;Kvinde;1913;Hovedstaden;Nej;Far ikke angivet;D;1935;1934;5
+148;;Mand;1902;Land;Ja;Stenhugger;B;1935;1934;5
+149;;Kvinde;1906;Land;Nej;Far ikke angivet;D;1935;1934;5
+150;;Kvinde;1914;Land;Ja;Skovarbejder;B;1935;1934;5
+151;;Mand;1909;Land;Ja;Husmand;A;1935;1934;5
+152;;Mand;1917;Land;Ja;Husmand;A;1935;1934;5
+153;;Kvinde;1917;By;Ja;Bager;B;1935;1934;5
+154;;Mand;1913;By;Ja;Kusk;B;1935;1934;5
+155;;Mand;1911;Land;Ja;Arbejdsmand og indsidder;B;1935;1934;5
+156;;Mand;1894;Land;Ja;Murer;B;1935;1935;2
+157;;Kvinde;1911;Land;Ja;Husmand;A;1935;1934;5
+158;;Mand;1897;Land;Nej;Tjenestekarl;B;1935;1934;5
+159;;Mand;1905;Land;Ja;Husmand;A;1936;1935;2
+160;;Mand;1906;By;Ja;Arbejder;B;1935;1934;5
+161;;Mand;1913;Land;Nej;Kusk;B;1935;1934;5
+162;;Mand;1915;By;Nej;Fodermester;B;1935;1934;5
+163;;Kvinde;1914;By;Nej;Arbejdsmand;B;1935;1934;5
+164;;Kvinde;1911;By;Ja;Købmand;A;1935;1934;5
+165;;Kvinde;1913;Land;Ja;Fodermester;B;1935;1934;5
+166;;Kvinde;1917;Land;Ja;banearbejder;B;1935;1934;5
+167;;Kvinde;1910;Land;Ja;banearbejder;B;1935;1934;5
+168;;Mand;1914;Land;Nej;Far ikke angivet;D;1935;1934;5
+169;;Mand;1912;Land;Nej;Arbejder;B;1935;1934;5
+170;;Kvinde;1907;Land;Ja;Arbejdsmand;B;1935;1934;5
+171;;Kvinde;1917;Land;Nej;Far ikke angivet;D;1938;1934;5
+172;;Kvinde;1914;By;Ja;Arbejdsmand;B;1935;1934;5
+173;;Kvinde;1918;Land;Ja;Arbejdsmand;B;1936;1934;5
+174;;Mand;1917;By;Ja;Arbejdsmand;B;1936;1934;5
+175;;Mand;1914;Land;Ja;Arbejder;B;1936;1934;5
+176;;Kvinde;1911;Land;Ja;Husmand;A;1936;1934;5
+177;;Kvinde;1913;Hovedstaden;Nej;Far ikke angivet;D;1936;1935;1
+178;;Kvinde;1902;Land;Ja;Indsidder;B;1936;1934;5
+179;;Kvinde;1919;By;Ja;Arbejdsmand;B;1936;1934;5
+180;;Kvinde;1901;Land;Ja;Skrædder;B;1936;1934;5
+181;;Mand;1888;Land;Nej;Fattiglem;C;1936;1935;1
+182;;Mand;1913;By;Ja;fyrbøder;B;1936;1934;5
+183;;Kvinde;1903;Land;Nej;Væver;B;1936;1934;5
+184;;Mand;1910;By;Nej;Maler;B;1936;1934;5
+185;;Mand;1909;By;Nej;Far ikke angivet;D;1936;1934;5
+186;;Mand;1913;Land;Ja;Boelsmand;A;1936;1934;5
+188;;Kvinde;1906;Land;Nej;Tjenestekarl;B;1936;1934;5
+189;;Kvinde;1910;Land;Nej;Arbejdsmand;B;1936;1934;5
+190;;Mand;1913;By;Ja;Vognbygger (Wagenbauer);B;1936;1934;5
+191;;Kvinde;1913;Land;Ja;Boelsmand;A;1936;1935;1
+193;;Kvinde;1915;By;Nej;Arbejder;B;1936;1934;5
+194;;Kvinde;1906;Land;Ja;Arbejdsmand;B;1936;1934;5
+195;;Kvinde;1907;Land;Ja;Arbejdsmand;B;1936;1934;5
+197;;Kvinde;1915;Hovedstaden;Nej;Arbejdsmand;B;1936;1934;5
+198;;Kvinde;1912;Land;Ja;Arbejdsmand;B;1936;1934;5
+199;;Kvinde;1918;By;Ja;Arbejder;B;1936;1934;5
+200;;Kvinde;1898;Land;Ja;Arbejdsmand;B;1936;1934;5
+201;;Mand;1911;Land;Ja;Arbejdsmand;B;1936;1934;5
+202;;Kvinde;1902;Land;Ja;Arbejdsmand;B;1936;1934;5
+203;;Kvinde;1914;Land;Nej;Far ikke angivet;D;1936;1934;5
+204;;Kvinde;1913;Land;Ja;Arbejdsmand;B;1936;1934;5
+205;;Mand;1912;Land;Ja;Fodermester;B;1936;1934;5
+206;;Mand;1911;Land;Ja;Fodermester;B;1936;1934;5
+207;;Kvinde;1914;Land;Ja;Fisker;B;1936;1934;5
+208;;Mand;1900;By;Ja;Cigarmager;B;1936;1935;2
+209;;Kvinde;1914;By;Ja;Havnearbejder;B;1936;1934;5
+210;;Kvinde;1909;Land;Nej;erhverv ikke angivet;D;1936;1934;5
+211;;Kvinde;1910;By;Ja;Arbejdsmand;B;1936;1934;5
+212;;Kvinde;1918;By;Ja;Arbejder;B;1936;1934;5
+213;;Kvinde;1918;By;Ja;Gartner;B;1936;1934;5
+214;;Kvinde;1911;Land;Ja;Indsidder;B;1936;1934;5
+215;;Mand;1896;Land;Ja;Indsidder;B;1936;1935;2
+216;;Mand;1911;By;Ja;Arbejdsmand;B;1936;1934;5
+218;;Mand;1897;Land;Nej;Far ikke angivet;D;1936;1934;5
+219;;Mand;1913;Land;Ja;Arbejdsmand;B;1937;1934;5
+220;;Kvinde;1915;Land;Ja;Slagteriarbejder;B;1936;1934;5
+221;;Mand;1918;By;Ja;Arbejdsmand;B;1936;1934;5
+222;;Mand;1915;By;Ja;Livsforsikringsagent;A;1936;1934;5
+223;;Kvinde;1916;Land;Ja;Arbejdsmand;B;1936;1934;5
+224;;Kvinde;1910;Land;Ja;Arbejdsmand;B;1936;1934;5
+225;;Kvinde;1915;Land;Ja;Indsidder;B;1936;1934;5
+226;;Mand;1917;Land;Ja;Husmand;A;1936;1934;5
+227;;Mand;1917;By;Ja;Arbejdsmand;B;1936;1934;5
+228;;Kvinde;1912;Land;Ja;Statshusmand;A;1936;1934;5
+229;;Mand;1915;Land;Ja;Arbejdsmand;B;1936;1935;1
+230;;Kvinde;1916;Land;Ja;Husmand;A;1936;1934;5
+231;;Kvinde;1916;Land;Ja;Slagteriarbejder;B;1938;1934;5
+232;;Kvinde;1909;Land;Ja;Røgter;B;1936;1934;5
+233;;Kvinde;1914;Land;Ja;Indsidder;B;1936;1934;5
+234;;Kvinde;1915;Land;Ja;Arbejdsmand;B;1936;1934;5
+235;;Kvinde;1909;Hovedstaden;Ja;Gasværksarbejder;B;1936;1935;1
+236;;Mand;1903;Land;Nej;Tjenestekarl;B;1936;1934;5
+237;;Mand;1913;By;Ja;Støbemester;A;1937;1934;5
+238;;Kvinde;1917;Land;Ja;Arbejdsmand;B;1936;1934;5
+239;;Kvinde;1904;Land;Ja;Arbejdsmand;B;1937;1934;5
+240;;Kvinde;1903;Land;Nej;Erhverv ikke angivet;D;1936;1934;5
+241;;Kvinde;1915;Land;Ja;Husmand;A;1936;1934;5
+242;;Mand;1909;Land;Nej;Tjenestekarl;B;1936;1934;5
+243;;Kvinde;1915;Land;Nej;Far ikke angivet;D;1936;1934;5
+244;;Mand;1905;Land;Nej;Arbejdsmand;B;1936;1934;5
+245;;Kvinde;1915;Land;Ja;Fodermester;B;1936;1934;5
+246;;Kvinde;1909;Land;Ja;Boelsmand;A;1936;1934;5
+247;;Kvinde;1915;By;Ja;Smed;B;1936;1934;5
+248;;Kvinde;1913;Hovedstaden;Nej;Far ikke angivet;D;1937;1934;5
+249;;Kvinde;1913;Land;Ja;Arbejdsmand;B;1936;1934;5
+250;;Kvinde;1913;By;Ja;Arbejdsmand;B;1937;1934;5
+251;;Kvinde;1910;Land;Ja;Havearbejder;B;1936;1934;5
+252;;Kvinde;1906;Land;Ja;Husmand og smed;B;1936;1934;5
+254;;Kvinde;1918;Land;Nej;Far ikke angivet;D;1937;1934;5
+255;;Kvinde;1913;Land;Ja;Arbejdsmand;B;1937;1934;5
+256;;Kvinde;1905;Land;Ja;Husmand;A;1937;1934;5
+257;;Mand;1913;By;Ja;Arbejdsmand;B;1937;1934;5
+258;;Kvinde;1915;Land;Nej;Far ikke angivet;D;1937;1934;5
+259;;Kvinde;1901;Land;Ja;Arbejdsmand;B;1937;1934;5
+260;;Kvinde;1907;By;Nej;Karetmagersvend;B;1937;1934;5
+261;;Kvinde;1916;Land;Ja;Arbejdsmand;B;1937;1934;5
+262;;Kvinde;1917;Land;Ja;Gårdejer;A;1937;1934;5
+263;;Kvinde;1916;By;Ja;Arbejder;B;1937;1934;5
+264;;Kvinde;1912;Land;Ja;Arbejdsmand;B;1938;1934;5
+265;;Kvinde;1916;Land;Ja;Statshusmand;A;1937;1934;5
+266;;Mand;1916;Land;Ja;Arbejder;B;1937;1934;5
+267;;Mand;1901;Land;Ja;Arbejdsmand;B;1937;1934;5
+268;;Kvinde;1919;Land;Ja;Arbejdsmand;B;1937;1934;5
+269;;Mand;1910;Land;Ja;Indsidder, fattiggård;C;1937;1934;5
+270;;Mand;1912;By;Ja;Skomager;B;1937;1935;1
+271;;Mand;1910;Land;Nej;Erhverv ikke angivet;D;1937;1934;5
+272;;Mand;1909;Land;Ja;Indsidder og møller;A;1939;1934;5
+273;;Kvinde;1907;Land;Ja;Fisker;B;1937;1934;5
+274;;Kvinde;1905;Land;Ja;Arbejdsmand;B;1937;1934;5
+275;;Kvinde;1911;Land;Ja;Gårdmand;A;1938;1934;5
+276;;Kvinde;1912;Land;Nej;Tjenestekarl;B;1937;1934;5
+277;;Kvinde;1916;Land;Ja;Arbejdsmand;B;1937;1934;5
+278;;Kvinde;1915;Land;Ja;Tømrer;B;1937;1934;5
+279;;Kvinde;1909;By;Ja;Arbejdsmand;B;1937;1934;5
+280;;Kvinde;1918;Land;Nej;Far ikke angivet;D;1937;1934;5
+281;;Kvinde;1919;Land;Nej;Far ikke angivet;D;1937;1934;5
+282;;Kvinde;1916;Land;Ja;Gårdejer;A;1937;1934;5
+283;;Kvinde;1914;Land;Nej;Bødker;B;1937;1934;5
+284;;Mand;1908;Land;Nej;Tjenestekarl;B;1937;1934;5
+285;;Mand;1908;Land;Ja;Husejer;A;1937;1934;5
+286;;Kvinde;1917;Land;Ja;Arbejdsmand;B;1937;1934;5
+287;;Kvinde;1901;Land;Ja;Arbejdsmand;B;1937;1934;5
+288;;Kvinde;1914;Land;Ja;Arbejdsmand;B;1937;1934;5
+289;;Mand;1907;Land;Nej;Tjenestekarl;B;1937;1934;5
+290;;Mand;1914;Land;Ja;Arbejdsmand;B;1937;1934;5
+291;;Mand;1907;Land;Nej;Far ikke angivet;D;1937;1934;5
+292;;Kvinde;1910;By;Ja;Mejerist;A;1937;1934;5
+293;;Kvinde;1910;Land;Ja;Husmand;A;1937;1934;5
+294;;Mand;1913;By;Ja;Arbejdsmand;B;1937;1934;5
+295;;Mand;1909;Land;Nej;Arbejdsmand;B;1937;1934;5
+296;;Mand;1916;By;Nej;Teglværksarbejder;B;1937;1934;5
+297;;Kvinde;1917;By;Nej;Spinder;B;1937;1934;5
+298;;Kvinde;1913;Land;Ja;Husejer og cementstøber;B;1937;1934;5
+299;;Kvinde;1906;Land;Ja;Gårdejer;A;1937;1934;5
+300;;Kvinde;1920;Land;Ja;Husmand;A;1937;1934;5
+301;;Kvinde;1916;Land;Ja;Arbejdsmand;B;1937;1934;5
+302;;Kvinde;1914;By;Ja;Arbejdsmand;B;1937;1934;5
+303;;Kvinde;1909;By;Nej;Billedhugger;A;1937;1934;5
+304;;Kvinde;1903;Land;Ja;Arbejdsmand;B;1937;1934;5
+305;;Kvinde;1919;Land;Ja;Møller;A;1937;1934;5
+306;;Mand;1914;By;Ja;Arbejdsmand;B;1937;1934;5
+307;;Kvinde;1916;Land;Ja;Fodermester;B;1937;1934;5
+308;;Mand;1909;By;Ja;Arbejder;B;1937;1934;5
+309;;Kvinde;1909;Land;Ja;Indsidder;B;1937;1934;5
+310;;Kvinde;1920;Land;Ja;Arbejdsmand;B;1937;1934;5
+311;;Kvinde;1912;Land;Nej;Tjenestekarl;B;1937;1934;5
+312;;Mand;1909;By;Ja;Arbejdsmand;B;1937;1934;5
+313;;Kvinde;1917;Land;Ja;Indsidder;B;1937;1934;5
+315;;Kvinde;1911;Land;Ja;Fodermester;B;1938;1934;5
+316;;Kvinde;1918;By;Ja;Arbejdsmand;B;1938;1934;5
+317;;Kvinde;1910;Land;Nej;Far ikke angivet;D;1938;1934;5
+318;;Kvinde;1909;By;Ja;Arbejdsmand;B;1938;1934;5
+319;;Kvinde;1917;By;Ja;Arbejdsmand;B;1938;1934;5
+320;;Kvinde;1918;Land;Ja;Arbejdsmand;B;1938;1934;5
+321;;Kvinde;1904;Land;Ja;Arbejdsmand;B;1939;1934;5
+322;;Kvinde;1916;Land;Ja;Arbejdsmand;B;1938;1934;5
+323;;Kvinde;1918;Hovedstaden;Ja;Snedker;B;1938;1934;5
+324;;Mand;1907;Land;Nej;Hotelkarl;B;1938;1934;5
+325;;Kvinde;1900;Land;Nej;Far ikke angivet;D;1938;1934;5
+326;;Mand;1906;Land;Ja;Arbejdsmand;B;1938;1934;5
+327;;Kvinde;1912;By;Nej;Fiskehandler;A;1938;1934;5
+328;;Mand;1917;By;Nej;Bagerikarl;B;1938;1934;5
+329;;Kvinde;1915;Land;Ja;Bagersvend;B;1938;1934;5
+330;;Mand;1918;By;Ja;Arbejdsmand;B;1938;1934;5
+331;;Mand;1916;Land;Ja;Arbejder;B;1938;1934;5
+333;;Kvinde;1918;Land;Ja;Arbejdsmand og husejer;B;1938;1935;1
+334;;Mand;1885;By;Ja;Tømrer;B;1938;1935;2
+335;;Mand;1906;Land;Ja;Røgter;B;1938;1934;5
+336;;Kvinde;1919;By;Ja;Arbejdsmand;B;1938;1934;5
+337;;Kvinde;1917;Land;Ja;Barber og cykelhandler;A;1938;1934;5
+339;;Kvinde;1917;Land;Ja;Skovarbejder;B;1938;1934;5
+340;;Mand;1912;By;Ja;Arbejdsmand;B;1938;1934;5
+342;;Kvinde;1913;Land;Nej;Far ikke angivet;D;1938;1934;5
+343;;Kvinde;1911;Land;Ja;Husejer;A;1938;1934;5
+344;;Kvinde;1917;Land;Ja;Malkerøgter;B;1938;1934;5
+345;;Kvinde;1913;Land;Ja;Husmand;A;1938;1934;5
+346;;Mand;1914;Land;Ja;Arbejdsmand;B;1938;1934;5
+347;;Mand;1915;Land;Ja;Depotarbejder;B;1938;1934;5
+348;;Mand;1900;Hovedstaden;Nej;Telefonarbejder;B;1938;1934;5
+349;;Kvinde;1913;Land;Nej;Far ikke angivet;D;1938;1934;5
+350;;Kvinde;1914;By;Nej;Far ikke angivet;D;1938;1934;5
+351;;Kvinde;1914;Land;Ja;Arbejder;B;1938;1934;5
+352;;Kvinde;1916;By;Ja;Murer;B;1938;1935;1
+353;;Kvinde;1918;Land;Ja;Arbejdsmand;B;1943;1934;5
+354;;Kvinde;1919;By;Ja;Nitter;B;1938;1934;5
+355;;Kvinde;1920;Land;Nej;Far ikke angivet;D;1938;1934;5
+356;;Kvinde;1906;By;Ja;Kelner;B;1938;1934;5
+357;;Kvinde;1906;Land;Ja;Fabriksarbejder;B;1938;1934;5
+358;;Kvinde;1917;Land;Ja;Arbejdsmand;B;1938;1934;5
+359;;Kvinde;1916;Land;Ja;Skomager;B;1938;1934;5
+360;;Mand;1919;Land;Ja;Landmand;A;1938;1934;5
+362;;Mand;1914;By;Ja;Skomager;B;1938;1935;1
+363;;Mand;1917;Land;Ja;Arbejdsmand;B;1938;1934;5
+364;;Kvinde;1914;Land;Ja;Murer;B;1938;1934;5
+365;;Kvinde;1897;Land;Nej;Far ikke angivet;D;1938;1934;5
+366;;Kvinde;1912;Land;Ja;Maskinarbejder;B;1938;1934;5
+367;;Mand;1913;Land;Nej;erhverv ikke angivet;D;1939;1935;1
+368;;Kvinde;1919;By;Ja;Arbejdsmand;B;1938;1935;1
+369;;Mand;1916;Land;Ja;Arbejdsmand;B;1938;1934;5
+370;;Kvinde;1917;Land;Ja;Fodermester;B;1938;1934;5
+371;;Mand;1916;Land;Ja;Arbejdsmand;B;1939;1934;5
+372;;Mand;1912;By;Ja;Skærsliber;B;1939;1934;5
+373;;Kvinde;1911;Land;Ja;Husmand;A;1939;1934;5
+374;;Kvinde;1899;Land;Ja;Indsidder;B;1939;1934;5
+375;;Kvinde;1910;By;Ja;Arbejder;B;1939;1934;5
+376;;Kvinde;1910;Land;Ja;Husmand;A;1939;1934;5
+377;;Mand;1915;Land;Ja;Arbejdsmand;B;1939;1935;1
+378;;Kvinde;1913;Land;Ja;Arbejdsmand;B;1939;1934;5
+379;;Mand;1911;Land;Ja;Gårdmand;A;1939;1935;2
+380;;Kvinde;1917;By;Nej;Arbejdsmand;B;1939;1934;5
+381;;Kvinde;1917;By;Nej;Arbejdsmand;B;1939;1934;5
+382;;Kvinde;1918;Land;Ja;Arbejdsmand;B;1939;1934;5
+383;;Kvinde;1918;By;Ja;Arbejdsmand;B;1939;1934;5
+384;;Mand;1920;By;Ja;Arbejder;B;1939;1934;5
+385;;Kvinde;1917;Land;Nej;Tjenestekarl;B;1939;1934;5
+386;;Kvinde;1917;By;Nej;Far ikke angivet;D;1939;1935;1
+387;;Kvinde;1911;Land;Nej;Far ikke angivet;D;1939;1934;5
+388;;Mand;1911;Land;Ja;Arbejdsmand;B;1939;1934;5
+389;;Kvinde;1918;Land;Ja;Arbejdsmand;B;1939;1934;5
+390;;Kvinde;1911;Land;Ja;Arbejder;B;1939;1934;5
+391;;Kvinde;1920;Land;Ja;Husmand;A;1939;1934;5
+393;;Mand;1898;By;Ja;Rebslagersvend;B;1939;1934;5
+394;;Mand;1910;Land;Ja;Gårdmand;A;1939;1934;5
+395;;Kvinde;1914;By;Ja;Havnearbejder;B;1939;1934;5
+396;;Kvinde;1919;By;Ja;Væver;B;1939;1934;5
+397;;Kvinde;1918;Land;Ja;Mølleejer;A;1939;1934;5
+398;;Mand;1902;By;Ja;Arbejder;B;1939;1934;5
+399;;Mand;1915;Hovedstaden;Nej;Overportør;A;1939;1934;5
+400;;Mand;1903;Land;Nej;Arbejdsmand;B;1939;1934;5
+401;;Mand;1918;Land;Ja;Banearbejder;B;1939;1934;5
+402;;Mand;1913;Land;Ja;Arbejdsmand;B;1939;1935;2
+403;;Mand;1910;Land;Ja;Indsidder;B;1939;1935;2
+404;;Mand;1906;Land;Ja;Gårdmand;A;1939;1935;2
+405;;Mand;1916;Land;Ja;Invalid;C;1939;1935;2
+406;;Mand;1893;By;Ja;Typograf;B;1939;1935;2
+407;;Kvinde;1912;Land;Ja;Banearbejder;B;1939;1934;5
+408;;Mand;1921;Land;Ja;Smedesvend;B;1939;1934;5
+409;;Kvinde;1909;By;Ja;Assistent;A;1939;1934;5
+410;;Mand;1913;Land;Ja;Fodermester;B;1939;1934;5
+411;;Mand;1914;Land;Ja;Fodermester;B;1939;1934;5
+412;;Mand;1912;By;Ja;Arbejder;B;1940;1934;5
+413;;Kvinde;1915;Land;Ja;Arbejdsmand;B;1939;1934;5
+414;;Mand;1916;By;Ja;Arbejdsmand;B;1939;1934;5
+415;;Kvinde;1918;By;Ja;Sømand;B;1939;1934;5
+416;;Kvinde;1910;Hovedstaden;Nej;Kusk;B;1939;1935;1
+417;;Kvinde;1920;By;Ja;Arbejdsmand;B;1939;1934;5
+418;;Kvinde;1907;By;Ja;Arbejdsmand;B;1939;1934;5
+419;;Mand;1898;Land;Ja;Husmand;A;1939;1934;5
+420;;Kvinde;1917;Land;Ja;Husmand;A;1939;1934;5
+421;;Kvinde;1911;Land;Ja;Smed;B;1939;1934;5
+422;;Kvinde;1920;Land;Ja;Arbejdsmand;B;1939;1935;1
+423;;Kvinde;1905;Land;Nej;Erhverv ikke angivet;D;1939;1934;5
+424;;Kvinde;1911;Land;Ja;Murer;B;1939;1934;5
+425;;Kvinde;1920;Land;Nej;Arbejdsmand;B;1939;1934;5
+426;;Kvinde;1920;Land;Ja;Maskinarbejder;B;1939;1934;5
+427;;Kvinde;1918;Land;Nej;Tjenestekarl;B;1939;1934;5
+428;;Mand;1904;Land;Ja;Arbejdsmand;B;1939;1934;5
+429;;Kvinde;1910;Land;Ja;Husmand;A;1939;1934;5
+430;;Kvinde;1918;Land;Ja;Husejer;A;1939;1934;5
+431;;Kvinde;1920;Land;Ja;Arbejdsmand;B;1939;1934;5
+432;;Mand;1908;By;Ja;Arbejdsmand;B;1939;1934;5
+433;;Kvinde;1917;By;Nej;Far ikke angivet;D;1940;1934;5
+434;;Kvinde;1912;Land;Ja;Fodermester;B;1940;1934;5
+435;;Kvinde;1917;Land;Ja;Husmand;A;1940;1934;5
+436;;Kvinde;1915;Land;Ja;Husmand;A;1940;1934;5
+437;;Mand;1918;Land;Ja;Arbejdsmand;B;1940;1935;1
+438;;Kvinde;1918;By;Ja;Arbejdsmand;B;1940;1934;5
+439;;Mand;1916;By;Nej;Far ikke angivet;D;1940;1934;5
+440;;Kvinde;1914;Land;Ja;Arbejdsmand;B;1940;1935;1
+441;;Kvinde;1916;By;Ja;Arbejdsmand;B;1940;1934;5
+442;;Mand;1905;By;Ja;Portør;B;1940;1935;2
+443;;Kvinde;1915;By;Nej;Far ikke angivet;D;1940;1934;5
+444;;Kvinde;1913;Land;Ja;Maler;B;1940;1934;5
+445;;Kvinde;1919;By;Ja;Arbejdsmand;B;1940;1934;5
+446;;Kvinde;1920;By;Ja;Murersvend;B;1940;1934;5
+447;;Kvinde;1917;Land;Nej;Far ikke angivet;D;1940;1934;5
+448;;Kvinde;1921;By;Ja;Garveriarbejder;B;1940;1934;5
+449;;Mand;1918;Land;Ja;Arbejdsmand;B;1940;1934;5
+450;;Kvinde;1909;Land;Ja;Arbejdsmand;B;1940;1934;5
+452;;Kvinde;1922;Land;Ja;Arbejdsmand;B;1940;1934;5
+453;;Kvinde;1919;By;Ja;Agent;A;1940;1934;5
+454;;Kvinde;1913;Land;Ja;Arbejdsmand;B;1940;1934;5
+455;;Kvinde;1907;Land;Nej;Arbejdskarl;B;1940;1934;5
+456;;Kvinde;1920;Land;Ja;Fodermester;B;1940;1934;5
+457;;Mand;1913;Land;Ja;Arbejdsmand;B;1940;1935;2
+458;;Mand;1918;Land;Ja;Gårdejer;A;1940;1934;5
+459;;Kvinde;1914;Land;Nej;Erhverv ikke angivet;D;1940;1934;5
+460;;Kvinde;1904;Land;Ja;Pionier;B;1940;1934;5
+461;;Kvinde;1914;By;Nej;Far ikke angivet;D;1940;1934;5
+462;;Mand;1900;Land;Ja;Arbejdsmand;B;1940;1934;5
+463;;Mand;1911;Land;Ja;Fodermester;B;1940;1934;5
+464;;Kvinde;1921;By;Ja;Far ikke angivet;D;1940;1934;5
+465;;Kvinde;1902;Land;Ja;Husmand;A;1941;1934;5
+466;;Mand;1917;Land;Ja;Gårdmand;A;1940;1934;5
+467;;Mand;1914;Land;Nej;Far ikke angivet;D;1940;1935;1
+468;;Mand;1918;Land;Ja;Arbejdsmand;B;1940;1934;5
+469;;Mand;1917;Land;Ja;Husmand;A;1940;1934;5
+470;;Kvinde;1917;Land;Ja;Husmand;A;1940;1934;5
+471;;Kvinde;1914;Land;Ja;Gårdejer;A;1940;1934;5
+472;;Kvinde;1919;Land;Nej;Arbejder;B;1941;1934;5
+473;;Kvinde;1919;Land;Nej;Far ikke angivet;D;1940;1934;5
+474;;Kvinde;1901;Land;Ja;Slagter;B;1940;1934;5
+475;;Kvinde;1919;Land;Ja;Lærer;A;1941;1935;1
+476;;Mand;1911;By;Ja;Møllersvend;B;1941;1935;2
+477;;Kvinde;1911;By;Ja;Arbejder;B;1940;1934;5
+478;;Kvinde;1915;Land;Ja;Arbejder;B;1941;1934;5
+479;;Kvinde;1919;By;Nej;Arbejder;B;1941;1934;5
+480;;Kvinde;1917;Land;Ja;Arbejdsmand;B;1941;1934;5
+481;;Kvinde;1906;Hovedstaden;Ja;Bager;B;1942;1934;5
+482;;Kvinde;1907;Land;Ja;Husmand;A;1941;1935;1
+483;;Kvinde;1918;Land;Nej;Tjenestekarl;B;1941;1935;1
+484;;Mand;1919;Land;Ja;Arbejdsmand;B;1941;1934;5
+485;;Mand;1916;Land;Nej;Far ikke angivet;D;1941;1934;5
+486;;Kvinde;1920;Land;Ja;Arbejdsmand;B;1941;1934;5
+487;;Mand;1919;Land;Ja;Konditor;B;1941;1934;5
+488;;Mand;1906;Hovedstaden;;Kusk;B;1941;1935;2
+489;;Kvinde;1919;Land;Ja;Husmand;A;1941;1934;5
+490;;Mand;1912;Land;Ja;Husmand;A;1941;1934;5
+491;;Kvinde;1922;Land;Ja;Blikkenslager;B;1941;1935;2
+492;;Kvinde;1919;By;Ja;Chauffør;B;1941;1934;5
+493;;Mand;1880;Land;Ja;Tømrer;B;1941;1935;2
+494;;Mand;1920;By;Ja;Væver;B;1941;1934;5
+495;;Mand;1912;Hovedstaden;Nej;Far ikke angivet;D;1941;1935;1
+496;;Kvinde;1910;Land;Ja;Møllersvend;B;1941;1934;5
+497;;Kvinde;1911;By;Nej;Far ikke angivet;D;1941;1934;5
+498;;Kvinde;1915;Land;Ja;Husmand;A;1941;1934;5
+499;;Kvinde;1922;Land;Ja;Arbejder;B;1941;1934;5
+500;;Kvinde;1922;Land;Nej;Arbejdsmand;B;1941;1934;5
+501;;Kvinde;1917;Land;Ja;Arbejdsmand;B;1941;1934;5
+502;;Kvinde;1915;Land;Ja;Savskærer;B;1941;1934;5
+503;;Kvinde;1912;Land;Ja;Husmand;A;1942;1934;5
+504;;Kvinde;1921;Land;Ja;Arbejdsmand;B;1941;1934;5
+505;;Mand;1896;Land;Ja;Bogbinder;B;1941;1935;2
+506;;Mand;1903;By;Ja;Arbejder;B;1941;1934;5
+507;;Kvinde;1911;Land;Nej;Far ikke angivet;D;1941;1934;5
+508;;Mand;1896;Land;Nej;Far ikke angivet;D;1941;1935;2
+509;;Kvinde;1921;Land;Ja;Daglejer;B;1941;1934;5
+510;;Kvinde;1921;Land;Ja;Arbejdsmand;B;1941;1934;5
+511;;Kvinde;1920;By;Nej;Far ikke angivet;D;1941;1935;2
+512;;Kvinde;1923;Land;Ja;Montør;B;1941;1934;5
+513;;Kvinde;1922;Land;Ja;Arbejdsmand;B;1941;1934;5
+514;;Mand;1907;By;Ja;Sadelmager;B;1941;1934;5
+515;;Mand;1899;Land;Ja;Kådner (boelsmand);A;1941;1934;5
+516;;Kvinde;1923;By;Ja;Fodermester;B;1942;1934;5
